@@ -1,0 +1,9 @@
+@Pagination_HostAddress = https://localhost:7059
+
+GET {{Pagination_HostAddress}}/weatherforecast/
+Accept: application/json
+###
+
+GET {{Pagination_HostAddress}}/api/User
+Accept: application/json
+###
