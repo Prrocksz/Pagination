@@ -64,7 +64,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.Zero // Prevents time-based validation issues
         };
     });
-
+builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
