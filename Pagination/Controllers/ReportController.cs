@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Pagination.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class ReportController : ControllerBase

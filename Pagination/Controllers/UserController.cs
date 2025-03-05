@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pagination.Common;
 using Pagination.Models;
@@ -30,6 +31,7 @@ public class UserController : Controller
     }
     
     [HttpGet]
+    [Authorize]
     [Produces("application/json")]
     public List<Users> Users()
     {

@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Pagination.Models;
 
 namespace Pagination.Common;
 
-public class REPODB : DbContext
+public class REPODB : IdentityDbContext<IdentityUser>
 {
     public REPODB(DbContextOptions<REPODB> options) : base(options)
     {

@@ -1,3 +1,4 @@
+using System.Collections;
 using Pagination.Common;
 using Pagination.Models;
 
@@ -20,5 +21,13 @@ public class UserService : IUserService
     public List<Users> GetUsers()
     {
         return _repoDB.Users.ToList();
+    }
+
+    public bool ValidateUser(string username, string password)
+    {
+        if (!string.IsNullOrWhiteSpace(username) && !string.IsNullOrWhiteSpace(password))
+        {
+        }
+        return false;
     }
 }
