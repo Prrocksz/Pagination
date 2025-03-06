@@ -13,4 +13,5 @@ public class REPODB : IdentityDbContext<IdentityUser>
     }
     
     public DbSet<Users> Users { get; set; }
+    public DbSet<Employees> Employees { get; set; }
 }
